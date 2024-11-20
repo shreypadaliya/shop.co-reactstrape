@@ -1,0 +1,280 @@
+@import "font";
+@import "variable";
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// header section
+
+.header-section {
+  background-color: $primary-color;
+  height: 38px;
+}
+
+.header-container-wraper {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 38px;
+  position: relative;
+}
+
+.header-content {
+  @include text-styles($white-color, 14px, 18.9px, 500);
+}
+
+.header-icon-wraper {
+  position: absolute;
+  right: 0;
+}
+
+.header-content-link {
+  @include text-styles($white-color, 14px, 18.9px, 500);
+  text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+  .header-icon-wraper {
+    display: none;
+  }
+  .header-content {
+    @include text-styles($white-color, 12px, 16.2px, 500);
+  }
+}
+
+// navbar section
+
+.navbar-section {
+  padding: 24px 0px;
+}
+
+.navbar-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlink-wrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.nav-search-input {
+  max-width: 577px;
+  width: 100%;
+  height: 48px;
+  position: relative;
+}
+
+.navsearchinput {
+  width: 100%;
+  max-width: 577px;
+  height: 100%;
+  padding: 12px 16px 12px 52px;
+  border-radius: 62px;
+  background-color: $base-color;
+  color: #00000066;
+  border: none;
+}
+
+.nav-shop-profile {
+  gap: 14px;
+  display: flex;
+}
+
+.nav-search-input-icon {
+  position: absolute;
+  z-index: 1;
+  left: 16px;
+  top: 12px;
+}
+
+.navlink {
+  text-decoration: none;
+  @include text-styles($primary-color, 16px, 21.6px, 400);
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.search-icon-mobile {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.nav-left {
+  display: flex;
+  // align-items: center;
+  gap: 16px;
+}
+
+/* Tablet and mobile styles */
+@media (max-width: 991px) {
+  .hamburger-menu {
+    display: block;
+    order: 1;
+    padding-top: 5px;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  .nav-right {
+    order: 3;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .navlink-wrapper {
+    display: none;
+  }
+
+  .nav-search-input {
+    display: none;
+  }
+
+  .search-icon-mobile {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+  }
+
+  .navbar-navigation {
+    position: relative;
+  }
+}
+
+/* Extra Large (xl) - For screens 1200px to 1399px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .nav-search-input {
+    max-width: 477px;
+    width: 100%;
+    height: 48px;
+  }
+}
+
+/* Large (lg) - For screens 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-search-input {
+    max-width: 347px;
+    width: 100%;
+    height: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navhead {
+    font-weight: 700 !important;
+    font-size: 25.2px !important;
+    line-height: 30.24px !important;
+    color: $primary-color !important;
+  }
+  .hamburger-menu {
+    padding: 0;
+  }
+}
+
+// hero section
+
+.hero-section {
+  background-color: $secondary-color;
+  width: 100%;
+}
+.hero-section-wraper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+  // justify-content: center;
+}
+
+.hero-leftsection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  // padding: 103px 0px 113px 0px;
+}
+
+.hero-rightsection {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+
+.herostar1 {
+  position: absolute;
+  right: 55%;
+  top: 45%;
+}
+
+.herostar2 {
+  position: absolute;
+  top: 10%;
+}
+
+.hero-header {
+  max-width: 577px;
+}
+.hero-subtitle {
+  max-width: 545px;
+}
+
+.btn-primary {
+  background-color: $primary-color !important;
+  border: none !important;
+  padding: 16px 54px !important;
+  max-width: 210px !important;
+  height: 52px !important;
+  border-radius: 62px !important;
+}
+
+.hero-counter-section {
+  display: flex;
+  gap: 32px;
+}
+
+.hero-counter-wrap{
+display: flex;
+flex-direction: column;
+}
+.hero-counter-number{
+  @include text-styles($primary-color, 40px, 54px, 700);
+}
+
+.hero-counter-info{
+  @include text-styles(#00000099, 16px, 22px, 400);
+}
+
+.hero-separter{
+  height: 78px;
+  background-color: #0000001A;
+  border: 1px solid #0000001A;
+}

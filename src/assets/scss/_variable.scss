@@ -1,0 +1,75 @@
+@import "mixin";
+
+// Color Variables
+$primary-color: #000000;
+$secondary-color: #f2f0f7;
+$white-color: #ffff;
+$base-color: #f0f0f0;
+$theme-color: #f0eeed;
+$accent-color: #ff3333;
+
+// h1 Styles
+h1 {
+  font-size: 64px !important;
+  font-weight: 700 !important;
+  line-height: 64px !important;
+  color: $primary-color;
+  margin: 0 !important;
+}
+
+// h2 Styles
+h2 {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  line-height: 57.6px !important;
+  color: $primary-color !important;
+  margin: 0 !important; 
+}
+
+// h3 Styles
+h3 {
+  font-size: 40px !important;
+  font-weight: 700 !important;
+  line-height: 45px !important;
+  color: $primary-color !important;
+  margin: 0 !important;
+}
+
+// h4 Styles
+
+h4 {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 38.4px !important;
+  color: $primary-color;
+  margin: 0 !important; 
+}
+
+
+// h5 Styles
+h5 {
+  font-size: 20px !important;
+  font-weight: 700 !important; 
+  line-height: 27px !important;
+  color: $primary-color !important;
+  margin: 0 !important;
+}
+
+p{
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 22px !important;
+  color: $primary-color !important;
+  margin: 0 !important;
+}
+
+@mixin text-styles($color, $font-size, $line-height, $font-weight) {
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+
+
+

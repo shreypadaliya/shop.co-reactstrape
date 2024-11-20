@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Integral CF";
+  src: url("../../assets/font/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../../assets/font/Satoshi_Complete 2/Fonts/OTF/Satoshi-Regular.otf")
+    format("opentype"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
+h1,
+h2,
+h3,h4 {
+  font-family: " Integral CF", sans-serif;
+}
