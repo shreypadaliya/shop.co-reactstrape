@@ -18,6 +18,7 @@ const Productdetailpage = () => {
       <Alsolike/>
       <Latestoffer/>
       <Footer/>
+      
     </div>
   )
 }

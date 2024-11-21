@@ -1,22 +1,3 @@
-// import React from "react";
-// import Homepage from "./pages/Homepage";
-// import "./assets/scss/common.scss";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import Productdetailpage from "./pages/Productdetailpage";
-  
-
-// function App() {
-//   return (
-//     <>
-//       <Homepage/>
-//       <Productdetailpage/>
-//     </>
-//   );
-// }
-
-// export default App;
-
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";

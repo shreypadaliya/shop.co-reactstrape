@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; // Import slick CSS
-import "slick-carousel/slick/slick-theme.css"; // Import slick theme CSS
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Container } from "reactstrap";
 import brand1 from "../../assets/images/png/Group (1).png";
 import brand2 from "../../assets/images/png/zara-logo-1 1.png";

@@ -1,15 +1,3 @@
-// import React from 'react'
-
-// const Tshirt = () => {
-//   return (
-//     <div>
-//       dxdxdxx
-//     </div>
-//   )
-// }
-
-// export default Tshirt
-
 import React, { useState } from "react";
 import tshirt1 from "../../assets/images/png/image 2.png";
 import tshirt2 from "../../assets/images/png/image 5.png";

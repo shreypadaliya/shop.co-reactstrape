@@ -7,13 +7,13 @@ import { Container } from "reactstrap";
 
 const CustomPrevArrow = ({ onClick }) => (
     <div className="custom-prev" onClick={onClick}>
-      &#8592; {/* Left arrow */}
+      &#8592; 
     </div>
   );
   
   const CustomNextArrow = ({ onClick }) => (
     <div className="custom-next" onClick={onClick}>
-      &#8594; {/* Right arrow */}
+      &#8594; 
     </div>
   );
 
