@@ -6,8 +6,18 @@ import product1 from "../../assets/images/png/Frame 32.png";
 import product2 from "../../assets/images/png/Frame 33.png";
 import product3 from "../../assets/images/png/Frame 34.png";
 import product4 from "../../assets/images/png/Frame 38.png";
+import { useNavigate } from "react-router-dom";
+
 
 function Responsive() {
+  
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate("/product-details"); 
+  };
+
+
   var settings = {
     dots: false,
     infinite: false,
@@ -49,7 +59,7 @@ function Responsive() {
           <h2 className="newarrival-heading-section">TOP SELLING</h2>
 
           <div className="slider-container">
-            <Slider {...settings}>
+            <Slider {...settings} className="new_arrival_wrap">
               <div>
                 <ProductCard
                   image={product1}
@@ -124,7 +134,7 @@ function Responsive() {
           </div>
 
           <div className="button-holder">
-          <Button color="secondry">View all</Button>
+          <Button color="secondry"  onClick={handleRedirect}>View all</Button>
           </div>
           
         </Container>

@@ -4,7 +4,7 @@ import { ReactComponent as Icon2 } from "../../assets/images/svgs/Frame.svg";
 import { ReactComponent as Icon3 } from "../../assets/images/svgs//Frame (1).svg";
 import { ReactComponent as Icon4 } from "../../assets/images/svgs/Vector (1).svg";
 import { ReactComponent as Icon5 } from "../../assets/images/svgs/Frame (2).svg";
-// import { ReactComponent as Icon6 } from "../../assets/images/svgs/SVG (6).svg";
+import { ReactComponent as Icon6 } from "../../assets/images/svgs/Frame (3).svg";
 // import { ReactComponent as Icon7 } from "../../assets/images/svgs/SVG.svg";
 // import { ReactComponent as Icon8 } from "../../assets/images/svgs/SVG (1).svg";
 // import { ReactComponent as Icon9 } from "../../assets/images/svgs/SVG (2).svg";
@@ -25,8 +25,8 @@ export const Icon = ({ name, ...props }) => {
       return <Icon4 {...props} />;
     case "icon5":
       return <Icon5 {...props} />;
-    // case "icon6":
-    //   return <Icon6 {...props} />;
+    case "icon6":
+      return <Icon6 {...props} />;
     // case "icon7":
     //   return <Icon7 {...props} />;
     // case "icon8":

@@ -49,7 +49,7 @@ function Responsive() {
     <section className="brand-section">
       <Container>
         <div className="slider-container">
-          <Slider {...settings}>
+          <Slider {...settings} className="new_arrival_wrap">
             <div className="sliderimgwrapper">
               <img src={brand1} alt="" className="slider1img"/>
             </div>

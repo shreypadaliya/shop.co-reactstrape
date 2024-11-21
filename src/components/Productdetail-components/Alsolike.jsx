@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import { Container, Button } from "reactstrap";
 import ProductCard from "../common-components/ProductCard";
-import product1 from "../../assets/images/png/Frame 32.png";
-import product2 from "../../assets/images/png/Frame 33.png";
-import product3 from "../../assets/images/png/Frame 34.png";
-import product4 from "../../assets/images/png/Frame 38.png";
+import product1 from "../../assets/images/png/Frame 32 (2).png";
+import product2 from "../../assets/images/png/Frame 33 (2).png";
+import product3 from "../../assets/images/png/Frame 34 (2).png";
+import product4 from "../../assets/images/png/Frame 38 (2).png";
 import { useNavigate } from "react-router-dom";
 
 function Responsive() {
@@ -53,32 +53,33 @@ function Responsive() {
     <>
       <section className="newarrival-section">
         <Container>
-          <h2 className="newarrival-heading-section">NEW ARRIVALS</h2>
+          <h2 className="newarrival-heading-section">YOU MIGHT ALSO LIKE</h2>
 
           <div className="slider-container">
             <Slider {...settings} className="new_arrival_wrap">
               <div>
                 <ProductCard
                   image={product1}
-                  name="Tshirt with tape detail"
-                  price={120}
-                  rating={4.5}
-                />
-              </div>
-              <div>
-                <ProductCard
-                  image={product2}
-                  name="Skinny Fit Jeans"
-                  price={240}
-                  rating={3.5}
-                  originalPrice={260}
+                  name="Polo with Contrast Trims"
+                  price={212}
+                  rating={4}
+                  originalPrice={242}
                   discount={20}
                 />
               </div>
               <div>
                 <ProductCard
+                  image={product2}
+                  name="Gradient Graphic T-shirt"
+                  price={145}
+                  rating={3.5}
+                 
+                />
+              </div>
+              <div>
+                <ProductCard
                   image={product3}
-                  name="Checkred Shirt"
+                  name="Polo with Tipping Details"
                   price={180}
                   rating={4.5}
                 />
@@ -86,35 +87,36 @@ function Responsive() {
               <div>
                 <ProductCard
                   image={product4}
-                  name="Sleev striped T-shirt"
-                  price={130}
-                  rating={4.5}
-                  originalPrice={160}
+                  name="Black Striped T-shirt"
+                  price={120}
+                  rating={5}
+                  originalPrice={150}
                   discount={30}
                 />
               </div>
               <div>
                 <ProductCard
                   image={product1}
-                  name="Tshirt with tape detail"
-                  price={120}
-                  rating={4.5}
-                />
-              </div>
-              <div>
-                <ProductCard
-                  image={product2}
-                  name="Skinny Fit Jeans"
-                  price={240}
-                  rating={3.5}
-                  originalPrice={260}
+                  name="Polo with Contrast Trims"
+                  price={212}
+                  rating={4}
+                  originalPrice={242}
                   discount={20}
                 />
               </div>
               <div>
                 <ProductCard
+                  image={product2}
+                  name="Gradient Graphic T-shirt"
+                  price={145}
+                  rating={3.5}
+                 
+                />
+              </div>
+              <div>
+                <ProductCard
                   image={product3}
-                  name="Checkred Shirt"
+                  name="Polo with Tipping Details"
                   price={180}
                   rating={4.5}
                 />
@@ -122,20 +124,15 @@ function Responsive() {
               <div>
                 <ProductCard
                   image={product4}
-                  name="Sleev striped T-shirt"
-                  price={130}
-                  rating={4.5}
-                  originalPrice={160}
+                  name="Black Striped T-shirt"
+                  price={120}
+                  rating={5}
+                  originalPrice={150}
                   discount={30}
                 />
               </div>
             </Slider>
           </div>
-
-          <div className="button-holder">
-            <Button color="secondry" onClick={handleRedirect}>View all</Button>
-          </div>
-          <hr />
         </Container>
       </section>
     </>

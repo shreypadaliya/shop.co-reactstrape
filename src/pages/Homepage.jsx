@@ -6,6 +6,9 @@ import Brandslider from "../components/homepage-components/Brandslider";
 import Newarrival from "../components/homepage-components/Newarrival";
 import Topselling from "../components/homepage-components/Topselling";
 import Browse from "../components/homepage-components/Browse";
+import Happycustomer from "../components/homepage-components/Happycustomer";
+import Latestoffer from "../components/common-components/Latestoffer";
+import Footer from "../components/common-components/Footer";
 
 const Homepage = () => {
   return (
@@ -17,6 +20,9 @@ const Homepage = () => {
       <Newarrival/>
       <Topselling/>
       <Browse/>
+      <Happycustomer/>
+      <Latestoffer/>
+      <Footer/>
     </div>
   );
 };
