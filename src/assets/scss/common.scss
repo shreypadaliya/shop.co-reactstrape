@@ -1829,7 +1829,6 @@
 .casual-section-wraper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 20px;
 }
 
@@ -1842,4 +1841,10 @@
   width: 75%;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .paginate-products-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns below 1200px */
+  }
 }
