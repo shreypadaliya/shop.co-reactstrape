@@ -6,6 +6,7 @@ import Alsolike from '../components/Productdetail-components/Alsolike'
 import Latestoffer from "../components/common-components/Latestoffer";
 import Footer from "../components/common-components/Footer";
 import Breadcrumb from "../components/common-components/Breadcrumb";
+import Reviewtab from '../components/Productdetail-components/Reviewtab';
 
 
 const Productdetailpage = () => {
@@ -15,6 +16,7 @@ const Productdetailpage = () => {
       <Navbar/>
       <Breadcrumb/>
       <Tshirt/>
+      <Reviewtab/>
       <Alsolike/>
       <Latestoffer/>
       <Footer/>
