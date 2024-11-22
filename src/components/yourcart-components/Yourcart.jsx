@@ -7,7 +7,7 @@ const Yourcart = () => {
     <section>
       <Container>
         <div className="cart-page-container">
-          {/* Left Section: Cart Items */}
+          
           <div className="cart-items-container">
             {/* Cart Item */}
             <div className="cart-item">
