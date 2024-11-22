@@ -3,9 +3,14 @@ import { Container } from "reactstrap";
 import { Icon } from "../common-components/Svgicon";
 import navlogo from "../../assets/images/png/SHOP.CO.png";
 import navhamburgur from "../../assets/images/png/Frame (2).png";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate(); 
+  const handleCategorynav = () => {
+    navigate("/cart");
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -84,11 +89,11 @@ const Navbar = () => {
           </div>
 
           <div className="nav-right">
-            <div className="search-icon-mobile">
+            <div className="search-icon-mobile" >
               <Icon name="icon5" />
             </div>
             <div className="nav-shop-profile">
-              <div>
+              <div onClick={handleCategorynav}>
                 <Icon name="icon2" />
               </div>
               <div>
