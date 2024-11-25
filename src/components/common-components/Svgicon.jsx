@@ -10,7 +10,7 @@ import { ReactComponent as Icon8 } from "../../assets/images/svgs/Frame (5).svg"
 import { ReactComponent as Icon9 } from "../../assets/images/svgs/Frame (6).svg";
 import { ReactComponent as Icon10 } from "../../assets/images/svgs/Frame (7).svg";
 import { ReactComponent as Icon11 } from "../../assets/images/svgs/Frame (8).svg";
-// import { ReactComponent as Icon12 } from "../../assets/images/svgs/SVG (9).svg";
+import { ReactComponent as Icon12 } from "../../assets/images/svgs/Frame (9).svg";
 // import { ReactComponent as Icon13 } from "../../assets/images/svgs/SVG (10).svg";
 
 export const Icon = ({ name, ...props }) => {
@@ -37,8 +37,8 @@ export const Icon = ({ name, ...props }) => {
       return <Icon10 {...props} />;
     case "icon11":
       return <Icon11 {...props} />;
-    // case "icon12":
-    //   return <Icon12 {...props} />;
+    case "icon12":
+      return <Icon12 {...props} />;
     // case "icon13":
     //   return <Icon13 {...props} />;
     default:

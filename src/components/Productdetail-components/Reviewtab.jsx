@@ -19,7 +19,6 @@ import {
   Col,
 } from "reactstrap";
 import Reviewcardwithdate from "./Reviewcardwithdate";
-// import Reviewcardwithdate from "../../components/Productdetail-components/Reviewcardwithdate";
 
 const Reviewtab = () => {
   const [activeTab, setActiveTab] = useState("1");
@@ -84,28 +83,6 @@ const Reviewtab = () => {
               </Button>
 
               {/* Dropdown */}
-              {/* <Dropdown
-                isOpen={dropdownOpen}
-                toggle={toggleDropdown}
-                className="dropdown-menu-container d-none d-sm-block"
-              >
-                <DropdownToggle
-                  caret
-                  style={{
-                    backgroundColor: "#F5F5F5",
-                    color: "#000",
-                    border: "none",
-                    fontWeight: "400",
-                  }}
-                >
-                  Latest
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem>Oldest</DropdownItem>
-                  <DropdownItem>Highest Rated</DropdownItem>
-                  <DropdownItem>Lowest Rated</DropdownItem>
-                </DropdownMenu>
-              </Dropdown> */}
               <Dropdown
                 isOpen={dropdownOpen}
                 toggle={toggleDropdown}
