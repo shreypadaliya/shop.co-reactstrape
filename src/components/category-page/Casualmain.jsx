@@ -10,7 +10,6 @@ import {
 } from "reactstrap";
 import { Icon } from "../../components/common-components/Svgicon";
 
-
 const Casualmain = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [showMobileSidebar, setShowMobileSidebar] = useState(false);
@@ -51,14 +50,15 @@ const Casualmain = () => {
         <div className="casual-section-wrapper">
           <div
             className={`casual-section-left ${
-              isMobile ? (showMobileSidebar ? "mobile-visible" : "mobile-hidden") : ""
+              isMobile
+                ? showMobileSidebar
+                  ? "mobile-visible"
+                  : "mobile-hidden"
+                : ""
             }`}
           >
             {isMobile && (
-              <Button
-                onClick={toggleSidebar}
-                className="close-sidebar-button"
-              >
+              <Button onClick={toggleSidebar} className="close-sidebar-button">
                 ✕
               </Button>
             )}
@@ -87,10 +87,7 @@ const Casualmain = () => {
                       </DropdownMenu>
                     </Dropdown>
                   </div>
-                  <Button
-                    className="cas-button1-right"
-                    onClick={toggleSidebar}
-                  >
+                  <Button className="cas-button1-right" onClick={toggleSidebar}>
                     <Icon name="icon7" />
                   </Button>
                 </div>
@@ -99,10 +96,7 @@ const Casualmain = () => {
             <Paginateproduct />
           </div>
           {isMobile && showMobileSidebar && (
-            <div
-              onClick={toggleSidebar}
-              className="mobile-backdrop"
-            />
+            <div onClick={toggleSidebar} className="mobile-backdrop" />
           )}
         </div>
       </Container>
@@ -111,8 +105,6 @@ const Casualmain = () => {
 };
 
 export default Casualmain;
-
-
 
 // import React, { useState, useEffect } from "react";
 // import { Container, Button } from "reactstrap";

@@ -57,7 +57,7 @@ function Responsive() {
   return (
     <>
       <section className="happy-customer-section">
-        <Container>
+        <Container className="animate__animated animate__fadeInUp">
           <h2 className="happy-customer-heading">OUR HAPPY CUSTOMER</h2>
           <div className="slider-container">
             <Slider {...settings} className="hapy-customer-wrap">

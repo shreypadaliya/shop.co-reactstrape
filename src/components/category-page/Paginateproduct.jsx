@@ -278,7 +278,7 @@ const PaginateProduct = () => {
   const totalPages = Math.ceil(products.length / itemsPerPage);
 
   return (
-    <section className="paginate-products-section">
+    <section className="paginate-products-section animate__animated animate__fadeInRight">
       <div className="paginate-products-grid">
         {currentItems.map((product) => (
           <ProductCard key={product.id} {...product} />

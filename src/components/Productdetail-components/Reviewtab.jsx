@@ -34,7 +34,7 @@ const Reviewtab = () => {
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <section className="review-tab-section">
+    <section className="review-tab-section animate__animated  animate__fadeIn">
       <Container>
         <div>
           {/* Tab Navigation */}
@@ -109,7 +109,31 @@ const Reviewtab = () => {
           {/* Tab Content */}
           <TabContent activeTab={activeTab}>
             <TabPane tabId="1">
-              <p>Here are the product details...</p>
+              <div className="review-grid">
+                <Row>
+                  <Col sm="12" md="6" lg="6" className="p-2">
+                    <Reviewcardwithdate
+                      name="Samantha D.."
+                      review="I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+                      date="Posted on August 14, 2023"
+                      rating={4.5}
+                    />
+                  </Col>
+                  <Col sm="12" md="6" lg="6" className="p-2">
+                    <Reviewcardwithdate
+                      name="Alex M."
+                      review="The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."
+                      date="Posted on August 15, 2023"
+                      rating={4}
+                    />
+                  </Col>
+                </Row>
+                <div className="load-more-review-wrap">
+                  <Button className="load-more-review-wrap-button">
+                    Load More Review
+                  </Button>
+                </div>
+              </div>
             </TabPane>
             <TabPane tabId="2">
               <div className="review-grid">
@@ -175,7 +199,32 @@ const Reviewtab = () => {
               </div>
             </TabPane>
             <TabPane tabId="3">
-              <p>Here are the FAQs...</p>
+              <div className="review-grid">
+                <Row>
+                  <Col sm="12" md="6" lg="6" className="p-2">
+                    <Reviewcardwithdate
+                      name="Samantha D.."
+                      review="I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+                      date="Posted on August 14, 2023"
+                      rating={4.5}
+                    />
+                  </Col>
+                  <Col sm="12" md="6" lg="6" className="p-2">
+                    <Reviewcardwithdate
+                      name="Alex M."
+                      review="The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."
+                      date="Posted on August 15, 2023"
+                      rating={4}
+                    />
+                  </Col>
+                </Row>
+
+                <div className="load-more-review-wrap">
+                  <Button className="load-more-review-wrap-button">
+                    Load More Review
+                  </Button>
+                </div>
+              </div>
             </TabPane>
           </TabContent>
         </div>

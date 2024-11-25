@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <section className="navbar-section">
+    <section className="navbar-section animate__animated animate__fadeInUp">
       <Container>
         <div className="navbar-navigation">
           <div className="nav-left">

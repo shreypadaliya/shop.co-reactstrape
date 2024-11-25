@@ -62,7 +62,7 @@ const FilterSidebar = () => {
   };
 
   return (
-    <div className="filter-sidebar">
+    <div className="filter-sidebar animate__animated animate__fadeInLeft">
       {/* Categories Section */}
       <div className="filter-section">
         <div

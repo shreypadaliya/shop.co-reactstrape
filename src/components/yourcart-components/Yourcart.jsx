@@ -63,12 +63,12 @@ const Yourcart = () => {
 
   return (
     <section>
-      <Container>
+      <Container className="animate__animated  animate__slideInUp">
         <h4 className="card-section-top-heading">YOUR CART</h4>
         <div className="cart-page-container">
           {/* Cart Items */}
           <div className="cart-items-container">
-            {cartItems.map((item) => (
+            {/* {cartItems.map((item) => (
               <div key={item.id}>
                 <div className="cart-item">
                   <img
@@ -107,6 +107,47 @@ const Yourcart = () => {
                 </div>
                 <hr />
               </div>
+            ))} */}
+
+            {cartItems.map((item, index) => (
+              <div key={item.id}>
+                <div className="cart-item">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="cart-item-image"
+                  />
+                  <div className="cart-item-info">
+                    <div className="cart-item-title">{item.title}</div>
+                    <p className="cart-item-details">
+                      Size: {item.size} <br />
+                      Color: {item.color}
+                    </p>
+                    <div className="cart-item-price">${item.price}</div>
+                  </div>
+                  <div className="cart-item-quantity-delete">
+                    <div className="cart-item-quantity">
+                      <button
+                        className="quantity-btn"
+                        onClick={() => handleQuantityChange(item.id, false)}
+                      >
+                        -
+                      </button>
+                      <span className="quantity">{item.quantity}</span>
+                      <button
+                        className="quantity-btn"
+                        onClick={() => handleQuantityChange(item.id, true)}
+                      >
+                        +
+                      </button>
+                    </div>
+                    <button className="cart-item-delete">
+                      <Icon name="icon11" />
+                    </button>
+                  </div>
+                </div>
+                {index < cartItems.length - 1 && <hr />}
+              </div>
             ))}
           </div>
 
@@ -115,7 +156,9 @@ const Yourcart = () => {
             <div className="order-summary-title">Order Summary</div>
             <div className="order-summary-row">
               <span className="order-summary-label">Subtotal</span>
-              <span className="order-summary-value">${subtotal.toFixed(2)}</span>
+              <span className="order-summary-value">
+                ${subtotal.toFixed(2)}
+              </span>
             </div>
             <div className="order-summary-row">
               <span className="order-summary-label">Discount (-20%)</span>
@@ -125,7 +168,9 @@ const Yourcart = () => {
             </div>
             <div className="order-summary-row">
               <span className="order-summary-label">Delivery Fee</span>
-              <span className="order-summary-value">${deliveryFee.toFixed(2)}</span>
+              <span className="order-summary-value">
+                ${deliveryFee.toFixed(2)}
+              </span>
             </div>
             <hr />
             <div className="order-summary-total">
@@ -160,8 +205,6 @@ const Yourcart = () => {
 };
 
 export default Yourcart;
-  
-
 
 // import React from "react";
 // import { Container } from "reactstrap";
@@ -309,6 +352,3 @@ export default Yourcart;
 // };
 
 // export default Yourcart;
-
-
-

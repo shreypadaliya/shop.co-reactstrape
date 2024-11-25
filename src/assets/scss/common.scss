@@ -32,6 +32,7 @@
 .header-icon-wraper {
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .header-content-link {
@@ -87,6 +88,7 @@
 .nav-shop-profile {
   gap: 14px;
   display: flex;
+  cursor: pointer;
 }
 
 .nav-search-input-icon {
@@ -101,6 +103,10 @@
   @include text-styles($primary-color, 16px, 21.6px, 400);
 }
 
+.navlink:hover{
+  color: #00000099;
+}
+
 /* Hamburger menu styles */
 .hamburger-menu {
   display: none;
@@ -109,6 +115,7 @@
 
 .search-icon-mobile {
   display: none;
+  cursor: pointer;
 }
 
 .mobile-menu {
@@ -201,7 +208,7 @@
 // hero section
 
 .hero-section {
-  background-color: $secondary-color;
+  background-color: #f2f0f1;
   width: 100%;
 }
 
@@ -229,7 +236,7 @@
 
 .herostar1 {
   position: absolute;
-  left: 11%;
+  left: 0%;
   top: 45%;
 }
 
@@ -462,6 +469,7 @@
   border-radius: 20px;
   border: none !important;
   padding: 0px 10px;
+  cursor: pointer;
 }
 
 .cardsemimain {
@@ -499,15 +507,15 @@
   line-height: 32.4px;
   padding-left: 10px;
   text-decoration: line-through;
-  color: #00000066;
+  color: #00000066 !important;
 }
 
 .discount-prize {
   font-size: 12px;
   margin-left: 10px;
-  padding: 5px 10px;
-  border-radius: 62px;
-  background-color: #ff33331a !important;
+  padding: 6px 14px !important;
+  border-radius: 62px !important;
+  background-color: rgba(255, 51, 51, 0.1);
   color: $accent-color;
 }
 
@@ -536,6 +544,7 @@
   color: $primary-color !important;
   margin-bottom: 64px !important;
 }
+
 .button-holder {
   width: 100%;
   display: flex;
@@ -888,10 +897,24 @@
   margin-bottom: 26px;
 }
 .footsub {
-  color: #00000099;
+  color: rgba(0, 0, 0, 0.6);
   font-size: 19px;
   line-height: 19px;
   font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footsub:hover{
+  color: $primary-color;
+}
+
+.fooy-cname:hover {
+  color: $primary-color;
+}
+
+.payment-photo {
+  cursor: pointer;
 }
 
 .footsub-main {
@@ -1101,8 +1124,8 @@
 
 .size-options {
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
 }
 
 .size {
@@ -1110,18 +1133,18 @@
   border: none;
   border-radius: 62px !important;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
   color: #00000099 !important;
-  background-color: $base-color;
-  margin: 16px 0px 24px 0px;
+  background-color: $base-color !important;
+  margin: 16px 0px 24px 0px !important;
 }
 
 .size.active {
-  background-color: $primary-color;
+  background-color: $primary-color !important;
   color: #fff !important;
 }
 .size:hover {
-  background-color: $primary-color;
+  background-color: $primary-color !important;
   color: $white-color !important;
 }
 
@@ -1860,7 +1883,7 @@
 .cas-product-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 16px;
+  padding: 0px 16px 0px 16px;
   align-items: center;
 }
 
@@ -1899,6 +1922,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  margin-left: 5px;
 }
 
 .spam-cas-info {
@@ -2033,6 +2057,7 @@
 
 .order-summary-container {
   width: 40%;
+  height: 50%;
   max-width: 505px;
   background-color: $white-color;
   border-radius: 20px;
@@ -2098,7 +2123,10 @@
 .promo-code-btn {
   background-color: #000000;
   color: #ffffff;
-  padding: 12px 16px;
+  padding: 12px 16px !important;
+  max-width: 119px;
+  width: 100%;
+  height: 48px;
   border-radius: 62px;
   font-weight: 600;
   font-size: 16px;
@@ -2158,6 +2186,12 @@
     font-size: 14px;
     padding: 12px 20px;
   }
+
+  .promo-code-btn {
+    width: 100%;
+    max-width: 457px;
+  }
+
 }
 
 .card-section-top-heading {
@@ -2169,7 +2203,7 @@
 }
 
 .casual-section-left {
-  width: 390px !important;
+  width: 295px !important;
 }
 
 .casual-section-right {

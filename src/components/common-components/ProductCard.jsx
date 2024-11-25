@@ -50,10 +50,12 @@ const ProductCard = ({
           {originalPrice && (
             <CardText className="orignal-prize">${originalPrice}</CardText>
           )}
+
           {discount && (
-            <Badge color="danger" className="discount-prize">
+            <div className="discount-prize">
               -{discount}%
-            </Badge>
+            </div>
+        
           )}
         </div>
       </CardBody>

@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Productdetailpage from "./pages/Productdetailpage";
 import Categorypage from "./pages/Categorypage";
 import Cart from "./pages/Cart";
+import "animate.css";
+
 
 
 const App = () => {

@@ -4,6 +4,7 @@ import tshirt2 from "../../assets/images/png/image 5.png";
 import tshirt3 from "../../assets/images/png/image 6.png";
 import tshirt4 from "../../assets/images/png/image 1.png";
 import { Container } from "reactstrap";
+import { Button } from "@mui/material";
 
 const Tshirt = () => {
   const [selectedColor, setSelectedColor] = useState("brown");
@@ -21,7 +22,7 @@ const Tshirt = () => {
   return (
     <section>
       <Container>
-        <div className="product-detail">
+        <div className="product-detail animate__animated animate__fadeIn">
           <div className="product-detail__images">
             <div className="product-detail__thumbnails">
               <img src={tshirt1} alt="Thumbnail 1" />
@@ -76,13 +77,13 @@ const Tshirt = () => {
               <div className="product-colors-head">Choose Size</div>
               <div className="size-options">
                 {["Small", "Medium", "Large", "X-Large"].map((size) => (
-                  <button
+                  <Button
                     key={size}
                     className={`size ${selectedSize === size && "active"}`}
                     onClick={() => setSelectedSize(size)}
                   >
                     {size}
-                  </button>
+                  </Button>
                 ))}
               </div>
             </div>

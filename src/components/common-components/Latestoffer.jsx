@@ -20,7 +20,7 @@ const latestoffer = () => {
               <input
                 type="text"
                 className="offersearchinput"
-                placeholder="Search for product.."
+                placeholder="Enter your email address"
               />
             </div>
             <div>

@@ -15,14 +15,14 @@ const Homepage = () => {
     <div>
       <Header />
       <Navbar />
-      <Herosection/>
-      <Brandslider/>
-      <Newarrival/>
-      <Topselling/>
-      <Browse/>
-      <Happycustomer/>
-      <Latestoffer/>
-      <Footer/>
+      <Herosection />
+      <Brandslider />
+      <Newarrival />
+      <Topselling />
+      <Browse />
+      <Happycustomer />
+      <Latestoffer />
+      <Footer />
     </div>
   );
 };

@@ -17,6 +17,8 @@ function Responsive() {
     slidesToShow: 5,
     slidesToScroll: 5,
     initialSlide: 0,
+    autoplay: true, 
+    autoplaySpeed: 2000, 
     responsive: [
       {
         breakpoint: 1200,

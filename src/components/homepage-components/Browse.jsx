@@ -10,7 +10,7 @@ const Browse = () => {
   };
 
   return (
-    <section className="browse-section">
+    <section className="browse-section animate__animated animate__fadeInUp">
       <Container>
         <div className="browse-section-wrapper">
           <h2 className="browse-heading">BROWSE BY DRESS STYLE</h2>
