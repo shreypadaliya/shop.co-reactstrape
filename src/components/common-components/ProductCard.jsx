@@ -37,7 +37,7 @@ const ProductCard = ({
     <Card className="product-card">
       <CardImg top src={image} alt={name} className="cardsemimain" />
       <CardBody>
-        <CardTitle tag="h5">{name}</CardTitle>
+        <CardTitle className="pro-card-title-final">{name}</CardTitle>
         <div className="product-card-info">
           {renderStars(rating)}
           <CardText className="card-info-text">{rating}/5</CardText>

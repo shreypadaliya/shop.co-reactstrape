@@ -1,25 +1,51 @@
 @font-face {
   font-family: "Integral CF";
-  src: url("../../assets/font/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-heavyoblique.otf")
+  src: url("../../assets/font/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-boldoblique.otf")
     format("opentype");
-  font-weight: normal;
-  font-style: normal;
+  font-style: oblique;
 }
 
 @font-face {
   font-family: "Satoshi";
-  src: url("../../assets/font/Satoshi_Complete 2/Fonts/OTF/Satoshi-Regular.otf")
-    format("opentype"); 
-  font-weight: normal;
+  src: url("../../assets/font/Satoshi_Complete 2/Fonts/OTF/Satoshi-Medium.otf")
+    format("opentype");
   font-style: normal;
 }
 
 body {
-  font-family: "Satoshi", !important;
+  font-family: "Satoshi" !important;
 }
 
 h1,
 h2,
-h3,h4,h5 {
-  font-family: " Integral CF", !important;
+h3,
+h4,
+h5 {
+  font-family: "Integral CF" !important;
+
+  // @font-face {
+  //   font-family: "Integral CF";
+  //   src: url("../../assets/font/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-heavyoblique.otf")
+  //     format("opentype");
+  //   font-weight: normal;
+  //   font-style: normal;
+  // }
+
+  // @font-face {
+  //   font-family: "Satoshi";
+  //   src: url("../../assets/font/Satoshi_Complete 2/Fonts/OTF/Satoshi-Regular.otf")
+  //     format("opentype");
+  //   font-weight: normal;
+  //   font-style: normal;
+  // }
+
+  // body {
+  //   font-family: "Satoshi", !important;
+  // }
+
+  // h1,
+  // h2,
+  // h3,h4,h5 {
+  //   font-family: " Integral CF", !important;
+  // }
 }
