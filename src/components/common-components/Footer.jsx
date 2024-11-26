@@ -102,7 +102,7 @@ const Footer = () => {
               </Col>
             </Row>
           </div>
-          <div style={{ width: "100%", border: "1px solid #0000001A" }}></div>
+          <div className="foot-hline-style"></div>
           <div className="bootom-footersection">
             <div><span className="fooy-cname">Shop.co</span> © 2000-2023, All Rights Reserved</div>
             <div className="foot-grid-2-social-wrap">
