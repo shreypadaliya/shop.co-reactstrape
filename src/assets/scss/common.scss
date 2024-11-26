@@ -586,6 +586,12 @@
   @include text-styles($primary-color, 36px, 48.6px, 700);
   text-align: start !important;
   padding: 25px 36px;
+  transition: transform 0.3s ease; 
+}
+
+.brows-grid-upper-left:hover{
+  transform: scale(1.03);
+  
 }
 
 .brows-grid-upper-right {
@@ -599,6 +605,12 @@
   @include text-styles($primary-color, 36px, 48.6px, 700);
   text-align: start !important;
   padding: 25px 36px;
+  transition: transform 0.3s ease;
+}
+
+.brows-grid-upper-right:hover{
+  transform: scale(1.03);
+  
 }
 
 .brows-grid-bottom {
@@ -618,7 +630,14 @@
   @include text-styles($primary-color, 36px, 48.6px, 700);
   padding: 25px 36px;
   text-align: start !important;
+  transition: transform 0.3s ease;
 }
+
+.brows-grid-bottom-left:hover{
+  transform: scale(1.03);
+  
+}
+
 
 .brows-grid-bottom-right {
   width: 40%;
@@ -632,7 +651,14 @@
   @include text-styles($primary-color, 36px, 48.6px, 700);
   text-align: start !important;
   padding: 25px 36px;
+  transition: transform 0.3s ease;
 }
+
+.brows-grid-bottom-right:hover{
+  transform: scale(1.03);
+  
+}
+
 
 @media (max-width: 767px) {
   .brows-grid-upper,
