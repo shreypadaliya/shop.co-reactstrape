@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "reactstrap";
-import CountUp from "react-countup"; // Import CountUp
+import CountUp from "react-countup"; 
 import heroimg from "../../assets/images/png/Rectangle 2.png";
 import herostar1 from "../../assets/images/png/Vector.png";
 import herostart2 from "../../assets/images/png//Vector (1).png";

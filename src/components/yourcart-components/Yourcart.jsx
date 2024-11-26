@@ -36,7 +36,6 @@ const Yourcart = () => {
     },
   ]);
 
-  // Function to handle quantity changes
   const handleQuantityChange = (id, increment) => {
     setCartItems((prevItems) =>
       prevItems.map((item) =>
@@ -45,19 +44,18 @@ const Yourcart = () => {
               ...item,
               quantity: increment
                 ? item.quantity + 1
-                : Math.max(item.quantity - 1, 1), // Prevent quantity < 1
+                : Math.max(item.quantity - 1, 1), 
             }
           : item
       )
     );
   };
 
-  // Calculate subtotal, discount, and total
   const subtotal = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
     0
   );
-  const discount = subtotal * 0.2; // 20% discount
+  const discount = subtotal * 0.2; 
   const deliveryFee = 15;
   const total = subtotal - discount + deliveryFee;
 

@@ -4,7 +4,6 @@ import { Container, Button } from "reactstrap";
 import ProductCard from "../common-components/ProductCard";
 import { useNavigate } from "react-router-dom";
 
-// Import product images
 import product1 from "../../assets/images/png/Frame 32.png";
 import product2 from "../../assets/images/png/Frame 33.png";
 import product3 from "../../assets/images/png/Frame 34.png";
@@ -13,7 +12,6 @@ import product4 from "../../assets/images/png/Frame 38.png";
 function Responsive() {
   const navigate = useNavigate();
 
-  // Product data
   const products = [
     {
       image: product1,

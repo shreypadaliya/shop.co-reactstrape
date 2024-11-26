@@ -15,7 +15,6 @@ function Responsive() {
     navigate("/product-details");
   };
 
-  // Array of products
   const products = [
     {
       image: product1,
